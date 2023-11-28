@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/* =====
+key_top
+====== */
+
+.key_top {
+    position: relative;
+}
+
+.key_top .page_title {
+    font-family: 'Dancing Script', cursive;
+    font-size: var(--heading_page);
+    display: inline-block;
+    position: absolute;
+}
+
+.key_top .page_title {
+    top: 40px;
+    left: 20px;
+}

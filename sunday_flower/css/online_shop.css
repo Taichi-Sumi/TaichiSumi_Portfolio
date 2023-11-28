@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* ========== key ========== */
+.key {
+    background-image: url(../img/online.jpg);
+    background-position: center center;
+}
+
+/* ========== section : item ========== */
+
+
+.sec_item .section_title {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.sub_title_h {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title_deco {
+    height: 2px;
+    width: 30px;
+    background-color: #ED8324;
+    margin: 8px auto 24px;
+}
+
+.seika {
+    margin-bottom: 48px;
+}
+
+.gift {
+    margin-bottom: 60px;
+}

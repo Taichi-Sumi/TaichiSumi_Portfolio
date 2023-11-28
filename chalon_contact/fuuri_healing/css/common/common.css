@@ -1,0 +1,327 @@
+@charset "UTF-8";
+
+/* 変数宣言 */
+:root {
+    /* color */
+    --white: #fff;
+    --main-color: #D8CBCE;
+    --accent-color: #DBCBA4;
+    --text-color: #212121;
+    /* margin */
+    --section-gutter-sp: 48px;
+    --key-under-gutter-sp: 40px;
+    --heading-under-gutter-sp: 32px;
+    --content-under-gutter-sp: 40px;
+    /* font size */
+    --heading_page: 40px;
+    --heading1: 24px;
+    --heading2: 20px;
+    --text: 16px;
+    --gnav-text: 18px;
+}
+
+/* =====
+共通設定 
+===== */
+* {
+    color: var(--text-color);
+    font-family: 'Kaisei Opti', serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.inner {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* ===== section内 ===== */
+section {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+section:first-of-type {
+    margin-top: 40px;
+}
+
+section .title_comp {
+    margin-bottom: 32px;
+}
+
+.section_title {
+    font-size: var(--heading2);
+}
+
+section .text {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: left;
+}
+
+section .pic {
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+
+.pic {
+    width: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+/* ==== btn ==== */
+.btn {
+    display: inline-block;
+    margin: 0 auto;
+    height: 43px;
+    line-height: 40px;
+    padding: 0 44px;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    border-radius: 22px;
+    position: relative;
+}
+
+.btn::after {
+    content: '▶︎';
+    font-size: 10px;
+    line-height: 43px;
+    position: absolute;
+    top: -1px;
+    right: 16px;
+}
+
+/* ==== submit btn ==== */
+.submit_btn {
+    display: inline-block;
+    margin-bottom: 48px;
+    height: 53px;
+    line-height: 50px;
+    padding: 0 44px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 27px;
+    position: relative;
+}
+
+.submit_btn::after {
+    content: '▶︎';
+    font-size: 10px;
+    line-height: 53px;
+    position: absolute;
+    top: -1px;
+    right: 16px;
+}
+
+/* ====
+header
+==== */
+header {
+    height: 70px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    height: 70px;
+    margin-left: 8px;
+}
+
+header .logo img {
+    height: 100%;
+}
+
+/* gnav */
+.gnav {
+    position: fixed;
+    text-align: center;
+    background-color: var(--white);
+    width: 100vw;
+    height: 100vh;
+    border: 24px solid var(--main-color);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 99;
+}
+
+.gnav .logo {
+    width: 170px;
+    height: 115px;
+    display: block;
+    margin: 20% auto 24px;
+}
+
+.gnav .logo img {
+    width: 80%;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.gnav .gnav_menu {
+    font-size: var(--gnav-text);
+}
+
+.gnav .gnav_menu li {
+    height: 40px;
+}
+
+.gnav .gnav_menu li a {
+    display: block;
+    height: 40px;
+    line-height: 40px;
+}
+
+.gnav .sns_list {
+    display: flex;
+    justify-content: center;
+}
+
+.gnav .sns_list li {
+    height: 50px;
+    width: 50px;
+    margin-top: 40px;
+}
+
+.gnav .sns_list li:first-of-type {
+    margin-right: 24px;
+}
+
+/* ===== hamburger ===== */
+.ham {
+    width: 70px;
+    height: 70px;
+    background-color: var(--main-color);
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.ham span {
+    display: block;
+    width: 33px;
+    height: 2px;
+    background-color: #212121;
+    transition: 0.4s;
+    position: absolute;
+    left: 25%;
+}
+
+.ham span:nth-child(1) {
+    top: 21px;
+}
+
+.ham span:nth-child(2) {
+    top: 33px;
+}
+
+.ham span:nth-child(3) {
+    top: 45px;
+}
+
+/* ========== ham on ========== */
+.gnav.on {
+    opacity: 1;
+    visibility: visible;
+}
+
+.ham.on {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.ham.on span:nth-child(1) {
+    position: absolute;
+    top: 35px;
+    transform: rotate(-45deg);
+}
+
+.ham.on span:nth-child(2) {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.ham.on span:nth-child(3) {
+    position: absolute;
+    top: 35px;
+    transform: rotate(45deg);
+}
+
+/* =====
+key
+====== */
+.key {
+    position: relative;
+    height: 400px;
+}
+
+.key img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.key .page_title {
+    font-family: 'Dancing Script', cursive;
+    font-size: var(--heading_page);
+    display: inline-block;
+    position: absolute;
+}
+
+/* ==========
+section title
+=========== */
+section .title_comp {
+    position: relative;
+}
+
+section .title_comp .title_bg {
+    height: 72px;
+    position: absolute;
+    top: -21PX;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ==========
+footer
+=========== */
+footer {
+    text-align: center;
+    border: 13px solid var(--main-color);
+    padding-bottom: 24px;
+}
+
+footer .footer_logo {
+    width: 130px;
+    height: 115px;
+    object-fit: cover;
+    margin: 48px auto 24px;
+}
+
+footer .gnav {
+    height: 520px;
+    width: 100%;
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    border: none;
+}

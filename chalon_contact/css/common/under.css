@@ -1,0 +1,135 @@
+@charset "UTF-8";
+/*==================
+上部タイトル
+===================*/
+.under_title{
+    height: 25vh;
+    background-size: cover;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.under_title h1{
+    margin: 0;
+    padding: 10px 16px;
+    line-height: 1;
+    font-size: 1.6rem;
+    font-weight: normal;
+    background-color:rgba(255,255,255,0.5);
+    display: inline-block;
+}
+
+@media screen and (min-width:1025px){
+    .under_title{
+        height: 180px;
+    }
+}/*========min-width:1025px=================*/
+
+/*==================
+パンくず
+===================*/
+.bread{
+    display: none;
+}
+
+@media screen and (min-width:1025px){
+    .bread{
+        display: block;
+    }
+
+    .bread ul{
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .bread ul li::after{
+        content: ">";
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .bread ul li:last-child::after{
+        content: "";
+    }
+}/*========min-width:1025px=================*/
+
+/*==================
+2カラム
+===================*/
+.wrapper{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.wrapper .side aside{
+    display: none;
+}
+.wrapper .side{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.wrapper .side ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.wrapper .side li{
+    list-style: none;
+    width: 46%;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 6.6rem;
+}
+
+.wrapper .side li a{
+    border: 1px solid #f77237;
+    display: block;
+}
+
+.wrapper .side li.current a{
+    background-color: #f77237;
+    color: #fff;
+}
+
+.wrapper main{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+@media screen and (min-width:1025px){
+    .wrapper{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .wrapper .side{
+        padding: 0;
+        width: 30%;
+    }
+
+    .wrapper .side aside{
+        display: block;
+    }
+    .wrapper .side li {
+        width: 100%;
+        margin-bottom: 0;
+    }
+    .wrapper .side ul{
+        margin-bottom: 30px;
+    }
+    .wrapper .side li a{
+        border: none;
+        border-bottom: 1px solid #f77237;
+    }
+
+    .wrapper main{
+        padding: 0;
+        width: 64%;
+    }
+}/*========min-width:1025px=================*/

@@ -1,0 +1,42 @@
+/* =====
+key
+====== */
+.key img {
+    object-position: 50% 100%;
+}
+
+.key .page_title {
+    bottom: 32px;
+    right: 32px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px #212121;
+}
+
+/* =====
+ul
+====== */
+
+.event_list {
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+
+.event_list li {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 4px var(--main-color);
+}
+
+.event_list li:last-of-type {
+    margin-bottom: 10px;
+}
+
+.event_list li .event_pic {
+    margin: 0 auto 8px;
+    max-width: 80%;
+}
+
+.event_list li .event_title {
+    margin-bottom: 8px;
+}

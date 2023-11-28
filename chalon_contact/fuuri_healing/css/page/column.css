@@ -1,0 +1,35 @@
+/* =====
+key
+====== */
+.key .page_title {
+    top: 150px;
+    right: 16px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px #212121;
+}
+
+/* =====
+ul
+====== */
+
+.col_list {
+    margin-top: 40px;
+    margin-bottom: 48px;
+}
+
+.col_list li {
+    margin-bottom: 40px;
+}
+
+.col_list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.col_list li .col_pic {
+    margin: 0 auto 8px;
+    max-width: 80%;
+}
+
+.col_list li .col_title {
+    margin-bottom: 8px;
+}

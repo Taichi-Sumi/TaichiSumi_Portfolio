@@ -1,0 +1,524 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+body {
+    z-index: 10;
+    overflow-x: hidden;
+}
+
+/* 画面のサイズ調整用クラス */
+
+.w_100 {
+    width: 100px;
+}
+
+.w_120 {
+    width: 120px;
+}
+
+.w_234 {
+    width: 234px;
+}
+
+.w_300 {
+    width: 300px;
+}
+
+.w_468 {
+    width: 468px;
+}
+
+/* タイトル改行 */
+.br1,
+.br2,
+.br3 {
+    display: none;
+}
+
+@media screen and (max-width:810px) {
+    .br1 {
+        display: block;
+    }
+
+    /* =========== max-width:810px =========== */
+}
+
+@media screen and (max-width:470px) {
+    .br2 {
+        display: block;
+    }
+
+    /* =========== max-width:470px =========== */
+}
+
+@media screen and (max-width:340px) {
+    .br3 {
+        display: block;
+    }
+
+    /* =========== max-width:340px =========== */
+}
+
+/* ヘッダー */
+header {
+    height: 100vh;
+    width: 100vw;
+    padding: 40vh 0;
+    background-color: #ddd;
+
+}
+
+@media screen and (max-width:599px) {
+    body {
+        max-width: 599px;
+        width: 100%;
+    }
+
+    main {
+        max-width: 599px;
+    }
+
+    .inner {
+        max-width: 599px;
+        margin: 0 auto;
+    }
+
+    .tab_contents {
+        width: 100%;
+    }
+
+
+    /* =========== max-width:599px =========== */
+}
+
+.title {
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 5px;
+    font-weight: normal;
+    letter-spacing: 10px;
+}
+
+.sub_title {
+    font-size: 20px;
+    text-align: center;
+    font-weight: lighter;
+    letter-spacing: 5px;
+
+}
+
+/* スクロール */
+.scroll {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    bottom: 1%;
+    right: 50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    animation: arrow 1.5s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrow {
+    0% {
+        bottom: 1%;
+    }
+
+    50% {
+        bottom: 3%;
+    }
+
+    100% {
+        bottom: 1%;
+    }
+}
+
+/*Scrollテキストの描写*/
+.scroll span {
+    /*描画位置*/
+    position: absolute;
+    left: -20px;
+    bottom: 10px;
+    /*テキストの形状*/
+    color: #333;
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    /*縦書き設定*/
+    /* -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl; */
+    writing-mode: vertical-rl;
+    z-index: 9;
+}
+
+/* 矢印の描写 */
+.scroll:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #333;
+    transform: skewX(-31deg);
+    z-index: 9;
+}
+
+.scroll:after {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*矢印の形状*/
+    width: 1px;
+    height: 50px;
+    background: #333;
+    z-index: 9;
+}
+
+
+.inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #000;
+    transition: 0.1s linear;
+    max-width: 100%;
+}
+
+
+.tab_contents {
+    margin-bottom: 32px;
+}
+
+
+
+/*yoko */
+
+.inner .tab_contents h2 {
+    text-align: center;
+    font-size: 32px;
+    letter-spacing: 2.5px;
+}
+
+.inner .tab_contents h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    letter-spacing: 16px;
+    text-indent: 16px;
+}
+
+.yoko {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.yoko2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 200px;
+    border-bottom: 1px solid #ddd;
+}
+
+.yoko3 {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 170px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* tate */
+.tate {
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+    margin: 0 auto;
+}
+
+
+.tate div:first-child {
+    margin-bottom: 50px;
+}
+
+/* タブパネル */
+label span {
+    background-image: linear-gradient(to top, #fd6 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+}
+
+input:checked+label span,
+label:hover span {
+    background-size: 100% 100%;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+label::after {
+    content: " / ";
+    margin: 0 25px;
+}
+
+label:last-of-type::after {
+    content: "";
+}
+
+label {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    letter-spacing: 2.5px;
+    position: sticky;
+    top: 24px;
+    z-index: 9;
+}
+
+
+
+/* ラベル背景 */
+.label_bg {
+    background-color: #fff;
+    position: sticky;
+    top: 72px;
+    height: 96px;
+    width: 100%;
+    z-index: 8;
+    transform: translateY(-72px);
+    border-bottom: 5px dotted #ddd;
+    margin: 0 calc(50% - 50vw);
+    width: 100vw;
+}
+
+/* ハンバーガー */
+nav {
+    display: none;
+}
+
+@media screen and (max-width:599px) {
+    nav {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.4s;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 50% 0;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-color: #ddd;
+        z-index: 11;
+    }
+
+    nav ul {
+        font-size: 40px;
+        font-weight: bold;
+        display: block;
+        margin: auto;
+    }
+
+    nav ul li {
+        margin: 15px 0;
+    }
+
+    nav ul li p {
+        font-weight: normal;
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        letter-spacing: 2.5px;
+
+    }
+
+    nav.on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .ham_base {
+        width: 50px;
+        height: 50px;
+        background-color: #ddd;
+        cursor: pointer;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 12;
+
+    }
+
+    .ham_base span {
+        display: block;
+        height: 3px;
+        width: 75%;
+        background-color: #333;
+        position: absolute;
+        left: 7px;
+        transition: 0.4s;
+    }
+
+    .ham_base span:nth-child(1) {
+        top: 13px;
+    }
+
+    .ham_base span:nth-child(2) {
+        top: 23px;
+    }
+
+    .ham_base span:nth-child(3) {
+        top: 33px;
+    }
+
+    /* ハンバーガーon */
+    .ham_base.on span:nth-child(1) {
+        top: 25px;
+        transform: rotate(-45deg);
+    }
+
+    .ham_base.on span:nth-child(2) {
+        display: none;
+    }
+
+    .ham_base.on span:nth-child(3) {
+        top: 25px;
+        transform: rotate(45deg);
+    }
+
+
+
+    /* =========== max-width:599px =========== */
+}
+
+@media screen and (max-width:599px) {
+
+    label,
+    .label_bg {
+        display: none;
+    }
+
+    .yoko {
+        display: block;
+    }
+
+    .yoko2 {
+        padding: 50px 50px;
+    }
+
+    .yoko3 {
+        display: block;
+        padding: 50px 100px;
+    }
+
+    .mb16 {
+        margin-bottom: 16px;
+    }
+
+    .tab_contents {
+        margin-top: 30px;
+    }
+
+    /* =========== max-width:599px =========== */
+}
+
+/* =========
+タブパネル切り替え
+=========== */
+
+/* ＝＝＝＝＝　　CSSのみの場合（アニメーション可だがデザイン不安）　　＝＝＝＝＝ */
+/* .tab_contents {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+    height: 0;
+    line-height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+#bijoude_tab:checked~#bijoude_content,
+#iqserver_tab:checked~#iqserver_content,
+#wws_tab:checked~#wws_content {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+} */
+
+
+/* #iqserver_content {
+    transform: translateY(-996px);
+}
+
+#wws_content {
+    transform: translateY(-996px);
+}
+
+
+/* ＝＝＝＝＝＝＝＝＝＝＝＝＝　Jqueryの場合　＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+.tab_contents {
+    display: none;
+}
+
+
+
+#bijoude_content.active,
+#iqserver_content.active,
+#wws_content.active {
+    display: block;
+    animation: tab_fadein 0.3s linear;
+}
+
+@keyframes tab_fadein {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ＝＝＝＝＝＝＝＝＝＝＝タブパネルここまで＝＝＝＝＝＝＝＝＝＝＝＝＝ */
+
+
+
+
+/* .test {
+    width: 500px;
+    height: 500px;
+    background-image: linear-gradient(to bottom, red 50%, blue 50%);
+    background-size: 50px 50px;
+} */
+
+/* フッター */
+footer {
+    text-align: center;
+    font-size: 14px;
+    padding-bottom: 15px;
+}

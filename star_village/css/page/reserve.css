@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* ======
+mv
+======= */
+.mv img {
+    object-position: 0 55%;
+}
+
+.mv .sec_subtitle {
+    top: 26%;
+}
+
+/* ======
+sec_contact
+======= */
+.sec_reserve .contact_text {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+/* ========== contact form ========== */
+.sec_reserve form {
+    margin: 0 auto;
+    width: 64%;
+    text-align: left;
+}
+
+.sec_reserve form .item_box {
+    margin-top: 40px;
+    padding-bottom: 32px;
+}
+
+.sec_reserve form .item {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.sec_reserve form span {
+    display: inline-block;
+    font-size: 12px;
+    padding: 3px 6px;
+    margin-left: 4px;
+}
+
+
+.sec_reserve form .required {
+    background-color: #ed2424;
+    color: #fff;
+}
+
+.sec_reserve form .any {
+    background-color: #ccc;
+    color: #333;
+}
+
+
+.sec_reserve form input,
+.sec_reserve form select {
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 16px;
+    background-color: #ddd;
+}
+
+.sec_reserve form textarea {
+    resize: none;
+    width: 100%;
+    padding: 8px 8px;
+    height: 160px;
+    background-color: #ddd;
+}
+
+@media screen and (max-width:519px) {
+    .sec_reserve form {
+        width: 80%;
+    }
+
+    /* =========== max-width:519px =========== */
+}

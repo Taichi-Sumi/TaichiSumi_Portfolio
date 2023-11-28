@@ -1,0 +1,28 @@
+/* =====
+key
+====== */
+.key .page_title {
+    bottom: 60px;
+    right: 40px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px #212121;
+}
+
+/* =====
+各session
+====== */
+/* .session_box {
+    margin-top: 48px;
+    margin-bottom: 48px;
+} */
+
+.voice_box .voice_title {
+    margin-bottom: 24px;
+}
+
+.voice_box .voice_text {
+    margin: 0 auto 24px;
+    width: 85%;
+    text-align: left;
+    font-size: 4.44vw;
+}

@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/* ======
+mv
+======= */
+.mv img {
+    object-position: 50% 75%;
+}
+
+.mv .sec_subtitle {
+    top: calc(26% + 8px);
+}
+
+/* ======
+price
+======= */
+.ci_co img {
+    width: 100%;
+    margin-top: 24px;
+}
+
+/* ======
+equipment
+======= */
+.sec_equipment .flexbox {
+    display: flex;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+
+.sec_equipment .wash {
+    padding-top: 0;
+}
+
+.sec_equipment .flexbox:last-of-type {
+    padding-bottom: 0;
+}
+
+.sec_equipment .flexbox img {
+    width: 40%;
+    max-width: 448px;
+    height: 438px;
+    object-fit: cover;
+}
+
+.shop img {
+    object-position: 50% 70%;
+}
+
+.sec_equipment .flexbox .sec_text {
+    width: 60%;
+    margin-left: 80px;
+}
+
+.sec_equipment .flexbox .sub_heading {
+    display: inline-block;
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sec_equipment .flexbox .sec_text .text {
+    line-height: 2;
+}
+
+@media screen and (max-width:768px) {
+    .sec_equipment .flexbox {
+        display: block;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .sec_equipment .flexbox img {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .sec_equipment .flexbox .sec_text {
+        width: 90%;
+        margin: 32px auto;
+    }
+
+    /* =========== max-width:768px =========== */
+}

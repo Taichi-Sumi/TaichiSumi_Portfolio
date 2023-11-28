@@ -1,0 +1,64 @@
+/* =====
+key
+====== */
+.key img {
+    object-position: 50% 100%;
+}
+
+.key .page_title {
+    bottom: 32px;
+    right: 32px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px #212121;
+}
+
+.event_pic {
+    margin: 40px auto 24px;
+    max-width: 85%;
+}
+
+/* ======
+dl
+======== */
+dl {
+    margin: 0 auto 40px;
+    width: 85%;
+    text-align: left;
+}
+
+dl dd {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+dl dt {
+    margin-bottom: 24px;
+}
+
+dl dt:last-of-type {
+    margin-bottom: 0;
+}
+
+dl dt pre {
+    white-space: pre-wrap;
+}
+
+
+/* =============
+urlに外部リンクマーク
+============= */
+.jump_link::after {
+    font-family: 'Material Icons';
+    content: '\e89e';
+    display: inline-block;
+    margin-left: 6px;
+    transform: translateY(3px);
+}
+
+/* ======
+btn
+======== */
+.btn {
+    margin-bottom: 48px;
+}

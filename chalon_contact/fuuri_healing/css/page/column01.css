@@ -1,0 +1,27 @@
+/* =====
+key
+====== */
+.key .page_title {
+    top: 150px;
+    right: 16px;
+    color: var(--white);
+    text-shadow: 1px 1px 3px #212121;
+}
+
+/* =====
+column
+====== */
+
+.column_detail {
+    width: 85%;
+    margin: 0 auto 48px;
+}
+
+pre {
+    text-align: left;
+    white-space: pre-wrap;
+}
+
+.btn {
+    margin-bottom: 48px;
+}

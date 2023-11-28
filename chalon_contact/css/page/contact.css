@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+.under_title {
+	background-image: url("../../img/contact_main.jpg");
+}
+
+.alert {
+	color: #f33;
+}
+
+.flow_area ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.flow_area ul li {
+	border: 1px solid #f77237;
+	width: 90px;
+	text-align: center;
+	line-height: 90px;
+	border-radius: 45px;
+}
+
+.flow_area ul li.current {
+	background-color: #f77237;
+	color: #fff;
+}
+
+.contact dl {
+	margin-bottom: 20px;
+}
+
+.contact dl dd input[type="text"],
+.contact dl dd input[type="email"] {
+	width: 100%;
+	max-width: 450px;
+	padding: 10px;
+}
+
+
+.contact dl dd textarea {
+	width: 100%;
+	max-width: 450px;
+	height: 200px;
+	padding: 10px;
+}
+
+.contact dl dd input[type="radio"],
+.contact dl dd input[type="checkbox"] {
+	display: none;
+}
+
+.contact dl dd input[type="radio"]+label,
+.contact dl dd input[type="checkbox"]+label {
+	display: inline-block;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: 1px solid #3cad5a;
+	text-align: center;
+	line-height: 5rem;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
+.contact dl dd input[type="radio"]:checked+label,
+.contact dl dd input[type="checkbox"]:checked+label {
+	background-color: #3cad5a;
+	color: #fff;
+}
+
+.contact button {
+	border: none;
+	background-image: linear-gradient(to right, #3cad5a, #307041);
+	width: 270px;
+	line-height: 70px;
+	color: #fff;
+	cursor: pointer;
+}
+
+.contact button:hover {
+	opacity: 0.5;
+}
+
+/* ==========　フォーム ========== */
+form dd {
+	margin-bottom: 24px;
+}
+
+form dd:last-of-type textarea {
+	width: 70%;
+	height: 160px;
+	resize: none;
+}
+
+.required {
+	display: inline-block;
+	background-color: #ed2424;
+	color: #fff;
+	font-size: 12px;
+	padding: 0 3px;
+	margin-left: 6px;
+	border-radius: 3px;
+}

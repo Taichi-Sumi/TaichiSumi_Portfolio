@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+/* ======
+mv
+======= */
+.mv img {
+    object-position: 40% 80%;
+}
+
+.mv .sec_subtitle {
+    top: calc(26% + 4px);
+}
+
+/* ======
+rule_nav
+======= */
+.rule_nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rule_btn {
+    display: inline-block;
+    padding: 0 32px;
+    height: 40px;
+    line-height: 40px;
+    letter-spacing: 2px;
+    position: relative;
+    border: 1px solid #333;
+    border-radius: px;
+    margin: 0 24px;
+}
+
+.rule_btn::after {
+    font-family: "Material Symbols Outlined";
+    content: '\e313';
+    font-size: 20px;
+    position: absolute;
+    transition: 0.4s;
+}
+
+.rule_btn:hover::after {
+    transform: translateY(2px);
+}
+
+/* ======
+rule_box
+======= */
+.rule_box {
+    padding: 88px 0;
+}
+
+.rule_box:nth-of-type(3) {
+    position: relative;
+}
+
+.rule_box:nth-of-type(3)::before {
+    content: '';
+    display: block;
+    width: 100vw;
+    margin: -88px calc(50% - 50vw) 0;
+    height: 100%;
+    background-color: #1f8ac025;
+    position: absolute;
+    z-index: -1;
+}
+
+.rule_box .heading {
+    width: 200px;
+}
+
+.rule_box ul li {
+    line-height: 2;
+    margin-bottom: 16px;
+    list-style: inside;
+}
+
+.rule_box ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    margin-bottom: 40px;
+}
+
+.wrapper:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrapper h4 {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+@media screen and (max-width:768px) {
+    .rule_box {
+        padding: 44px 0;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .rule_box:nth-of-type(3)::before {
+        margin: -44px calc(50% - 50vw) 0;
+    }
+
+    .rule_btn {
+        display: block;
+        margin: 32px auto;
+        width: 33%;
+    }
+
+    /* =========== max-width:768px =========== */
+}
+
+@media screen and (max-width:552px) {
+    .rule_btn {
+        width: 60%;
+    }
+
+    /* =========== max-width:519px =========== */
+}
+
+@media screen and (max-width:519px) {
+    .rule_box {
+        width: 90%;
+    }
+
+    /* =========== max-width:519px =========== */
+}

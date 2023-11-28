@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洋菓子店CHALON</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/common/reset.css">
+    <link rel="stylesheet" href="../../css/common/common.css">
+    <link rel="stylesheet" href="../../css/common/under.css">
+    <link rel="stylesheet" href="../../css/page/contact.css">
+</head>
+
+<body id="top">
+    <header>
+        <div class="inner">
+            <p><a href="../"><img src="../../img/logo.png" alt="洋菓子店CHALON"></a></p>
+            <div class="menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">当店について</a></li>
+                    <li><a href="../../menu/">メニュー</a></li>
+                    <li>
+                        <a href="../index.html">お菓子教室</a>
+                        <ul>
+                            <li><a href="#">ご参加の流れ</a></li>
+                            <li><a href="#">参加者の声</a></li>
+                            <li><a href="./index.html">お申込み</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="under_title">
+        <div class="inner">
+            <h1>お申し込み</h1>
+        </div>
+    </div>
+    <div class="bread">
+        <div class="inner">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="../index.html">お菓子教室</a></li>
+                <li>お申し込み</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <main>
+            <div class="flow_area">
+                <ul>
+                    <li class="current">1.入力</li>
+                    <li>2.確認</li>
+                    <li>3.送信</li>
+                </ul>
+            </div>
+            <div class="form_area contact">
+                <form action="check.php" method="post">
+                    <dl>
+                        <dt><label for="daihyou">代表者のお名前<span class="required">必須</span></label></dt>
+                        <dd><input type="text" name="daihyou" id="daihyou" required></dd>
+                        <dt><label for="email">メールアドレス<span class="required">必須</span></label></dt>
+                        <dd><input type="email" name="email" id="email" required></dd>
+                        <dt><label for="comment">ご質問内容<span class="required">必須</span></label></dt>
+                        <dd><textarea name="comment" id="comment" required></textarea></dd>
+                    </dl>
+                    <button class="btn">確認</button>
+                </form>
+            </div>
+        </main>
+        <div class="side">
+            <ul>
+                <li><a href="#">お菓子教室</a></li>
+                <li><a href="#">ご参加の流れ</a></li>
+                <li><a href="#">参加者の声</a></li>
+                <li class="current"><a href="#">お申し込み</a></li>
+            </ul>
+            <aside>
+                <p><a href="#"><img src="../../img/bnr.jpg" alt=""></a></p>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <div class="inner">
+            <p class="footer_logo"><img src="../../img/logo_white.png" alt="洋菓子店CHALON"></p>
+            <div class="footer_wrap">
+                <div class="footer_left">
+                    <ul>
+                        <li><a href="#">当店について</a></li>
+                        <li><a href="#">メニュー</a></li>
+                        <li>
+                            <a href="../index.html">お菓子教室</a>
+                            <ul>
+                                <li><a href="#">ご参加の流れ</a></li>
+                                <li><a href="#">参加者の声</a></li>
+                                <li><a href="./index.html">お申込み</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer_right">
+                    <ul>
+                        <li><a href="#"><img src="../../img/icon_fb.png" alt="facebook"></a></li>
+                        <li><a href="#"><img src="../../img/icon_tw.png" alt="twitter"></a></li>
+                        <li><a href="#"><img src="../../img/icon_insta.png" alt="instagram"></a></li>
+                    </ul>
+                    <dl>
+                        <dt>Address</dt>
+                        <dd>
+                            <address>
+                                〒160-0005<br>
+                                東京都新宿区愛住町22<br>
+                                第3山田ビル1F
+                            </address>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <p class="copy"><small>&copy; CHALON</small></p>
+        </div>
+    </footer>
+    <p class="to_top">
+        <a href="#top">
+            <span class="material-icons">
+                expand_less
+            </span>
+        </a>
+    </p>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../../js/main.js"></script>
+</body>
+
+</html>

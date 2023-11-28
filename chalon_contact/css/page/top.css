@@ -1,0 +1,213 @@
+@charset "UTF-8";
+/*====================
+キービジュアル
+=====================*/
+.key{
+    background-image: url(../../img/key.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 30px;
+}
+
+.key .pc{
+    display: none;
+}
+
+.key .inner{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+@media screen and (min-width:600px){
+    .key .sp{
+        display:none;
+    }
+
+    .key .pc{
+        display: block;
+    }
+
+    .key .pc p{
+        background-color: rgba(247,114,55,0.5);
+        color: #fff;
+        font-size: 4.1rem;
+        padding:41px;
+        font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .key .pc p span{
+        font-size: 2.6rem;
+    }
+
+}/*========min-width:600px=================*/
+
+
+
+/*====================
+スクロール
+=====================*/
+.scroll{
+    text-align: center;
+    line-height: 1;
+}
+
+.scroll span{
+    border: 1px solid #707070;
+    border-radius: 50%;
+}
+
+/*====================
+CHALONについて
+=====================*/
+.lead{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:600px){
+    .lead{
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}/*========min-width:600px=================*/
+
+
+/*====================
+メニュー
+=====================*/
+.top_menu .inner div{
+    margin-bottom: 10px;
+}
+
+.top_menu .inner div a{
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width:600px){
+    .top_menu .inner div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .top_menu .inner div a{
+        max-width: 45%;
+    }
+}/*========min-width:600px=================*/
+
+@media screen and (min-width:1025px){
+    .top_menu .inner div a{
+        max-width: 20.5%;
+    }
+}/*========min-width:1025px=================*/
+
+
+/*====================
+お菓子教室について
+=====================*/
+.top_lesson{
+    background-color: rgba(247,114,55,0.4);
+}
+
+.top_lesson .inner div{
+    margin-bottom: 30px;
+}
+
+@media screen and (min-width:600px){
+    .top_lesson .inner div{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .top_lesson .inner div p:first-child{
+        width: 40%;
+    }
+    .top_lesson .inner div p:last-child{
+        width: 55%;
+    }
+}/*========min-width:600px=================*/
+
+/*====================
+bottom_contents
+=====================*/
+.top_voice{
+    margin-bottom: 140px;
+}
+.top_voice p{
+    line-height: 1.5;
+}
+
+.top_voice p:first-child{
+    font-size: 1.2rem;
+}
+
+.top_voice p:nth-child(2){
+    margin-bottom: 10px;
+}
+
+.top_voice dl{
+    margin-bottom: 30px;
+
+}
+
+.top_info dl{
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width:500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top_info dl dt{
+    font-size: 1.2rem;
+}
+
+.top_info dl dd{
+    margin-bottom: 20px;
+}
+
+.top_info dl dd:last-child{
+    margin-bottom: 0;
+}
+
+.top_info dl dt time span{
+    background-color: #f77237;
+    color: #fff;
+    padding:3px;
+}
+
+@media screen and (min-width:600px){
+    .top_voice dl{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .top_voice dl dt{
+        width: 40%;
+    }
+    .top_voice dl dd{
+        width: 58%;
+    }
+}/*========min-width:600px=================*/
+
+@media screen and (min-width:1025px){
+    .bottom_contents .inner{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .bottom_contents section{
+        width: 47%;
+    }
+}/*========min-width:1025px=================*/
