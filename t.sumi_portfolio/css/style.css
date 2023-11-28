@@ -664,7 +664,7 @@ fade_in ｜下から上へ出現
   line-height: 50px;
   width: 80%;
   background-color: #fac06a;
-  color: #333;
+  color: #fdfdfd;
   font-size: 18px;
   letter-spacing: 2px;
   text-align: center;
@@ -873,7 +873,7 @@ fade_in ｜下から上へ出現
 .article-body h3 {
   position: relative;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   padding-left: 1em;
 }
 
@@ -895,6 +895,7 @@ fade_in ｜下から上へ出現
 .article-body p {
   font-size: 15px;
   line-height: 1.8;
+  padding-left: 1rem;
 }
 
 .article-body .material-symbols-outlined {
