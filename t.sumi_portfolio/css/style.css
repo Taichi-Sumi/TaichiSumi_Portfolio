@@ -19,13 +19,17 @@ img {
 }
 
 
-
 .pc-only {
   display: block;
 }
 
 .sp-only {
   display: none;
+}
+
+::selection {
+  background-color: #729be0;
+  color: #fff;
 }
 
 /*----------------------------
