@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+/* ========== key ========== */
+.key {
+    background-image: url(../img/key_access.jpg);
+    background-position: right center;
+}
+
+/* ========== section : access ========== */
+.sec_access .section_title {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.sec_access img {
+    margin: 0 auto;
+}
+
+.sec_access .access_gmap {
+    font-family: 'Noto Serif JP', serif;
+    display: inline-block;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 35px;
+    transition: 0.2s;
+}
+
+/* ========== table ========== */
+
+.sec_access table {
+    font-size: 16px;
+    text-align-last: left;
+    width: 90%;
+    margin: 24px auto 60px;
+    border-collapse: collapse;
+}
+
+.sec_access table tr {
+    line-height: 48px;
+    border-top: 1px solid #d9d9d9;
+}
+
+.sec_access table tr:last-of-type {
+    border-bottom: 1px solid #d9d9d9;
+}
+
+
+.sec_access table th {
+    width: 30%;
+    font-weight: 400;
+}
+
+.sec_access table td {
+    width: 70%;
+    font-weight: 400;
+}
+
+@media screen and (min-width:960px) {
+    .sec_access .map {
+        width: 70%;
+    }
+
+    .sec_access .access_gmap {
+        font-size: 18px;
+        height: 50px;
+        line-height: 45px;
+    }
+
+    .sec_access table {
+        width: 50%;
+        margin-top: 40px;
+        margin-bottom: 80px;
+        font-size: 18px;
+    }
+
+    .sec_access table tr {
+        line-height: 64px;
+    }
+
+    .sec_access table tr:last-of-type {
+        line-height: 48px;
+    }
+
+    .sec_access table tr:last-of-type th,
+    .sec_access table tr:last-of-type td {
+        padding: 8px 0;
+    }
+
+    .sec_access table th {
+        width: 40%;
+    }
+
+    .sec_access table td {
+        width: 60%;
+    }
+
+
+
+    /* =========== min-width:960px =========== */
+}

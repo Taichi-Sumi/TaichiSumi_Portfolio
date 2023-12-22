@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* ========== key ========== */
+.key {
+    background-image: url(../img/key_top.jpg);
+    background-position: center center;
+}
+
+/* ========== section : concept ========== */
+.copy {
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 45px 0;
+    line-height: 48px;
+}
+
+.sec_concept p {
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+@media screen and (min-width:960px) {
+    .copy {
+        text-align: center;
+        font-size: 32px;
+        margin: 80px 0;
+        line-height: 48px;
+    }
+
+    .sec_concept p {
+        font-size: 20px;
+        line-height: 2.5;
+    }
+
+    /* =========== min-width:960px =========== */
+}

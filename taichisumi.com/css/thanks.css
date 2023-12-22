@@ -1,0 +1,31 @@
+/*--------------------------------
+ 下層：thanksページ
+---------------------------------*/
+html,
+body,
+.wrapper {
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-y: hidden;
+}
+
+main {
+    height: 100%;
+}
+
+.thanks {
+    text-align: center;
+    height: 100%;
+}
+
+.thanks_text {
+    margin: 24px 0;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

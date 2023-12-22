@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* ======
+mv
+======= */
+.mv img {
+    object-position: 0 15%;
+}
+
+.mv .sec_subtitle {
+    top: calc(26% + 4px);
+}
+
+/* ======
+btn
+======= */
+.sec_access .intro {
+    text-align: center;
+    padding-bottom: 22px;
+    font-family: "YuMincho", "Yu Mincho", serif;
+}
+
+.sec_access .btn {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+    margin-top: 64px;
+    margin-bottom: 80px;
+}
+
+.sec_access .btn.map::before {
+    display: inline-block;
+    font-family: 'Material Symbols Outlined';
+    content: '\e55e';
+    transform: translate(-5px, 2px);
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px) {
+    .sec_access .intro {
+        padding-top: 22px;
+        padding-bottom: 0;
+        line-height: 2;
+    }
+
+    /* =========== max-width:768px =========== */
+}
+
+/* ======
+heading
+======= */
+.sec_access .access_text {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.sec_access .access_text.last p {
+    display: inline-block;
+    margin-bottom: 64px;
+}
+
+.sec_access .access_text h3 {
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+}
+
+.sec_access .access_text p,
+.sec_access .access_text address {
+    margin-top: 8px;
+    line-height: 2;
+}
+
+
+.sec_access .access_box .heading {
+    width: 400px;
+}
+
+/* ======
+access_box
+======= */
+
+.sec_access .access_box .pc {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sec_access .access_box .pc:first-of-type {
+    margin-bottom: 40px;
+}
+
+.sec_access .access_box .sp {
+    display: none;
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:768px) {
+
+    .sec_access .access_box .pc {
+        display: none;
+    }
+
+    .sec_access .access_box .sp {
+        display: block;
+    }
+
+    /* =========== max-width:768px =========== */
+}
+
+@media screen and (max-width:519px) {
+    .sec_access .access_box .heading {
+        width: 300px;
+    }
+
+    .sec_access .access_box .sp {
+        width: 90%;
+    }
+
+    /* =========== max-width:519px =========== */
+}
