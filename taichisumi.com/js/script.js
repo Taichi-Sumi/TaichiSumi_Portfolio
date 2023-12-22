@@ -38,26 +38,29 @@ $(function () {
     caret: true,//キャレットを表示させる
     blink: true,//キャレットを点滅させる
     blink_perm: false,//常に点滅しない(終了時のみ)
-    init:function(elm){//名前のタイピングが始まるタイミングで
-      $('#typing_2nd').css('opacity','0')//サブタイトルを非表示
+    init: function (elm) {//名前のタイピングが始まるタイミングで
+      $('#typing_2nd').css('opacity', '0')//サブタイトルを非表示
     },
-    fin:function(elm){//名前のタイピングが終わるタイミングで
-      $('#typing_1st > .t-caret').css('display','none'),
-      $('#typing_2nd').t({
-        typing:function(elm,chr_or_elm,left,total){
-          $('#typing_2nd').css('opacity','1')
-        },
-        //delay: 3.7,//ローディングアニメ、名前のタイピングを待つための遅延
-        speed: 150,//150ミリ秒
-        speed_vary: true,//人間のようなタイピング動作にする
-        caret: true,
-        blink: true,
-        blink_perm: false,//常に点滅しない(終了時のみ)
-      });
+    fin: function (elm) {//名前のタイピングが終わるタイミングで
+      $('#typing_1st > .t-caret').css('display', 'none'),
+        $('#typing_2nd').t({
+          typing: function (elm, chr_or_elm, left, total) {
+            $('#typing_2nd').css('opacity', '1')
+          },
+          //delay: 3.7,//ローディングアニメ、名前のタイピングを待つための遅延
+          speed: 150,//150ミリ秒
+          speed_vary: true,//人間のようなタイピング動作にする
+          caret: true,
+          blink: true,
+          blink_perm: false,//常に点滅しない(終了時のみ)
+          fin: function (elm) {
+            $('#typing_2nd > .t-caret').css('display', 'none')
+          }
+        });
     }
   });
 
-  
+
 });
 
 // 文字が表示後、キャレット削除

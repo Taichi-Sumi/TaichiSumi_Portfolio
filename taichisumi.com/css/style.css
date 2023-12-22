@@ -1,11 +1,11 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Montserrat", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   font-size: 15px;
-  letter-spacing: .05em;
+  letter-spacing: .06em;
   color: #333;
 }
 
@@ -276,7 +276,7 @@ fade_in ｜下から上へ出現
   padding: 0.5em;
   transition: .3s;
   letter-spacing: .05em;
-  color: #333;
+  color: #243149;
 }
 
 .gnav-item:last-of-type a {
@@ -533,6 +533,10 @@ fade_in ｜下から上へ出現
   border-radius: 50%;
 }
 
+.pie_95 {
+  background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#729be0 0% 95%, #d9d9d9 95% 100%);
+}
+
 .pie_85 {
   background-image: radial-gradient(#f2f2f2 30%, transparent 31%), conic-gradient(#729be0 0% 85%, #d9d9d9 85% 100%);
 }
@@ -606,6 +610,8 @@ fade_in ｜下から上へ出現
   font-size: 15px;
   line-height: 1.8;
   word-break: auto-phrase;
+  margin-bottom: 1.8em;
+
 }
 
 .profile-body p:not(:last-child) {
@@ -719,12 +725,17 @@ fade_in ｜下から上へ出現
   position: absolute;
   bottom: 1px;
   margin-left: 16px;
+  transition: .4s;
 }
 
 /* ホバーできる、かつマウスポインター　の端末でのみホバー動作 */
 @media (hover: hover) and (pointer: fine) {
   .submit_btn:hover {
     opacity: 0.8;
+  }
+
+  .submit_btn:hover::after {
+    transform: translateX(1em);
   }
 
   .pager_btn:hover::before,
