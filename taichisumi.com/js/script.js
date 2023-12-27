@@ -55,6 +55,21 @@ $(function () {
           blink_perm: false,//常に点滅しない(終了時のみ)
           fin: function (elm) {
             $('#typing_2nd > .t-caret').css('display', 'none')
+            $("#scrolldown").animate({ opacity: 1 }, { duration: 1000, easing: 'linear' })
+            $("#header > .container").animate({
+              opacity: 1
+            },
+              {
+                duration: 1000,
+                queue: false
+              })
+              .css({
+                'visibility': 'visible'
+              },
+                {
+                  duration: 1000,
+                  queue: false
+                })
           }
         });
     }

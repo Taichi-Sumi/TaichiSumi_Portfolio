@@ -150,7 +150,7 @@ mb_send_mail($tantou, $tantou_title, $tantou_body, $email_from);
                 <li class="current"><a href="#">お申し込み</a></li>
             </ul>
             <aside>
-                <p><a href="#"><img src="../../img/bnr.jpg" alt=""></a></p>
+                <p><a href="#"><img src="../../img/bnr.webp" alt=""></a></p>
             </aside>
         </div>
     </div>

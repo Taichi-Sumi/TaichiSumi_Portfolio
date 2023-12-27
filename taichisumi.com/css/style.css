@@ -223,6 +223,8 @@ fade_in ｜下から上へ出現
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .header-logo {
@@ -354,6 +356,7 @@ fade_in ｜下から上へ出現
   position: absolute;
   bottom: 45px;
   left: 50%;
+  opacity: 0;
 }
 
 /* 丸の描写 */
@@ -1073,6 +1076,7 @@ fade_in ｜下から上へ出現
   }
 
   /* ヘッダー */
+
   .header .container {
     padding: 15px;
   }

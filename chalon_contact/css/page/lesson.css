@@ -1,74 +1,81 @@
 @charset "UTF-8";
-.under_title{
-    background-image: url(../../img/lesson_main.jpg);
+
+.under_title {
+    background-image: url(../../img/lesson_main.webp);
     background-position: center center;
 }
 
-.lesson_box{
+.lesson_box {
     display: flex;
     flex-direction: column-reverse;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.lesson_box div p{
+.lesson_box div p {
     line-height: 1.5;
     margin-bottom: 10px;
 }
 
-.gaiyou{
+.gaiyou {
     padding-top: 40px;
 }
 
-.gaiyou table{
+.gaiyou table {
     width: 100%;
     margin-bottom: 30px;
 }
 
 .gaiyou table th,
-.gaiyou table td{
+.gaiyou table td {
     display: block;
 }
 
-.gaiyou table th{
+.gaiyou table th {
     font-weight: normal;
     text-align: left;
     background-color: #f77237;
     color: #fff;
     padding-left: 10px;
 }
-.gaiyou table td{
+
+.gaiyou table td {
     margin-bottom: 10px;
     padding-left: 10px;
 }
 
-@media screen and (min-width:600px){
-    .lesson_box{
+@media screen and (min-width:600px) {
+    .lesson_box {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .lesson_box > p{
+    .lesson_box>p {
         width: 46%;
     }
-    .lesson_box div{
+
+    .lesson_box div {
         width: 50%;
     }
 
-    .lesson_box div .title{
+    .lesson_box div .title {
         text-align: left;
     }
 
     .gaiyou table th,
-    .gaiyou table td{
+    .gaiyou table td {
         display: table-cell;
-        padding:20px;
+        padding: 20px;
         border: 1px solid #666;
     }
-}/*========min-width:600px=================*/
+}
 
-@media screen and (min-width:1025px){
-    .wrapper .lesson_box:first-child{
+/*========min-width:600px=================*/
+
+@media screen and (min-width:1025px) {
+    .wrapper .lesson_box:first-child {
         padding-top: 0;
     }
-}/*========min-width:1025px=================*/
+}
+
+/*========min-width:1025px=================*/

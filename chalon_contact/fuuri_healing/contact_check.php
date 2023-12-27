@@ -41,10 +41,10 @@ $message = htmlspecialchars($_POST['message']);
 
 <body>
     <header>
-        <a class="logo" href="./top.html"><img src="img/fuuri_logo.jpg" alt="風理ヒーリングオラクル"></a>
+        <a class="logo" href="./top.html"><img src="img/fuuri_logo.webp" alt="風理ヒーリングオラクル"></a>
         <!-- グローバルナビ -->
         <nav class="gnav">
-            <a class="logo" href="./top.html"><img src="img/fuuri_logo.jpg" alt="風理ヒーリングオラクル"></a>
+            <a class="logo" href="./top.html"><img src="img/fuuri_logo.webp" alt="風理ヒーリングオラクル"></a>
             <ul class="gnav_menu">
                 <li><a href="./top.html">トップ</a></li>
                 <li><a href="./menu.html">個人セッション</a></li>
@@ -68,7 +68,7 @@ $message = htmlspecialchars($_POST['message']);
 
     <div class="key">
         <h1 class="page_title">Contact</h1>
-        <img src="img/key_contact_apply.jpg" alt="パワーストーンの画像">
+        <img src="img/key_contact_apply.webp" alt="パワーストーンの画像">
     </div>
     <main>
         <div class="inner">
@@ -127,7 +127,7 @@ $message = htmlspecialchars($_POST['message']);
 
     <footer>
         <nav class="gnav">
-            <img class="footer_logo" src="img/fuuri_logo.jpg" alt="風理ヒーリングオラクル">
+            <img class="footer_logo" src="img/fuuri_logo.webp" alt="風理ヒーリングオラクル">
             <ul class="gnav_menu">
                 <li><a href="./top.html">トップ</a></li>
                 <li><a href="./menu.html">個人セッション</a></li>
