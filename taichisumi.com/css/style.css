@@ -223,8 +223,6 @@ fade_in ｜下から上へ出現
   align-items: center;
   justify-content: space-between;
   padding: 20px 40px;
-  opacity: 0;
-  visibility: hidden;
 }
 
 .header-logo {
@@ -453,6 +451,7 @@ fade_in ｜下から上へ出現
 
 .works-img img {
   transition: 0.2s;
+
 }
 
 .works-img::after {

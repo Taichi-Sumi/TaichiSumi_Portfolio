@@ -56,20 +56,6 @@ $(function () {
           fin: function (elm) {
             $('#typing_2nd > .t-caret').css('display', 'none')
             $("#scrolldown").animate({ opacity: 1 }, { duration: 1000, easing: 'linear' })
-            $("#header > .container").animate({
-              opacity: 1
-            },
-              {
-                duration: 1000,
-                queue: false
-              })
-              .css({
-                'visibility': 'visible'
-              },
-                {
-                  duration: 1000,
-                  queue: false
-                })
           }
         });
     }
